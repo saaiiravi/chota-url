@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lan="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport"
+        content="width = device-width initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible"
+        content= "ie=edge">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+        <title> Document</title>
+    </head>
+    <body>
+        <div class="container">
+        <h1>Chota URL</h1>
+        <form action="/api/shrink" method = "POST" class="my-4 form-inline">
+            <label for= "fullURL" class="sr-only">URL</label>
+            <input required placeholder="Url" type = "url" name = "fullurl" id = "fullURL" class="form-control col mr-2">
+            <button class="btn btn-success"type="submit">Shrink</button>
+        </form>
+        <h2><% if(typeof data != "undefined" && data) {  %>
+            <input id="survey-link" value="<a href="<%= data %>"><%= data %></a>" ></input>
+            
+            <%} %></h2> 
+
+            
+        
+       
+    </div>
+    </body>
+</html>
